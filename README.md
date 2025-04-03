@@ -12,21 +12,25 @@ The software pipeline processes micro-CT images to:
 - Calculate void fraction (porosity)
 - Generate 3D visualizations of the microstructure
 
-## Repository Structure
-
-- `/image-processing/`: Scripts for image preprocessing and feature detection
-- `/tracking/`: Algorithms for positional tracking of granules across CT slices
-- `/reconstruction/`: 3D reconstruction code
-- `/analysis/`: Scripts for entanglement detection and void fraction calculation
-- `/simulation/`: Fake staple generator for testing scalability
-- `/examples/`: Sample data and results
-
 ## Installation
 
 ### Dependencies
 
 ```
-# Will be added later
+numpy
+opencv-python
+scikit-image
+pandas
+matplotlib
+tqdm
+mpl_toolkits.mplot3d
+tifffile
+```
+Optional Dependencies:
+```
+scipy.spatial.KDTree
+scipy.optimize.linear_sum_assignment
+mpld3
 ```
 
 ## Usage
@@ -35,17 +39,14 @@ The software pipeline processes micro-CT images to:
 
 Need a single tif image
 ```python
-reconstruct_3.py
+reconstruct_staples.py
 ```
-outputs staple_key_points.csv
-
 
 ### Entanglement Detection
 
 ```python
-entanglements_2.py
+entanglements.py
 ```
-outputs reconstruct_3_entangled_pairs.csv
 
 ### Void Fraction Calculation
 
@@ -66,14 +67,3 @@ If you use this code in your research, please cite:
 Britton, L. (2025). Visualization of Entangled Hydrogel Granules for Injectable Gel Therapies. 
 Harvard University.
 ```
-
-## License
-
-MIT License
-
-## Acknowledgments
-
-- Kathy Liu
-- Prof. Joanna Aizenberg
-- Aizenberg Lab - Bioinspired Engineering Research Group
-- Harvard Center for Nanoscale Systems (CNS)
