@@ -55,22 +55,6 @@ The software pipeline processes micro-CT images to:
 # Example code for calculating void fraction
 ```
 
-## Results
-
-The software successfully:
-- Identifies and tracks granules with 77% accuracy (target: 95%)
-- Detects entanglements with a 4.6% error rate (within target of ±25%)
-- Calculates void fraction with 97% accuracy (target: ≥95%)
-- Handles large datasets of up to 500 staples
-
-## Future Work
-
-- Refine micro-CT imaging of gel granules
-- Improve tracking algorithm accuracy
-- Implement machine learning for better feature recognition
-- Test system performance on diverse granule geometries
-- Correlate gel structure with gel properties and clinical applications
-
 ## Citation
 
 If you use this code in your research, please cite:
