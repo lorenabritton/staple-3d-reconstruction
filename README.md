@@ -31,28 +31,32 @@ The software pipeline processes micro-CT images to:
 
 ## Usage
 
-### Image Processing
+### Image Processing and Staple/Granule Tracking
 
+Need a single tif image
 ```python
-# Example code for processing micro-CT images
+reconstruct_3.py
 ```
+outputs staple_key_points.csv
 
-### Tracking Granules/Staples
-
-```python
-# Example code for tracking centroids across slices
-```
 
 ### Entanglement Detection
 
 ```python
-# Example code for detecting entanglements
+entanglements_2.py
 ```
+outputs reconstruct_3_entangled_pairs.csv
 
 ### Void Fraction Calculation
 
 ```python
-# Example code for calculating void fraction
+void_fraction.py
+```
+
+### Fake Staple Generator
+
+```python
+fake_granule_generator.py
 ```
 
 ## Citation
